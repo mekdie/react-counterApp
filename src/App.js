@@ -13,6 +13,18 @@ class App extends Component {
     ],
   };
 
+  //MOUNTING
+
+  // constructor is called only once when an instance of a class is created (can be used for initializing the vlaue)
+  constructor() {
+    super(); //calling constructor of the parent class
+    console.log("App - Construtor");
+  }
+
+  componentDidMount() {
+    console.log("App - mounted");
+  }
+
   handleDelete = (counterId) => {
     const counters = this.state.counters.filter((c) => c.id != counterId);
     // this.setState({ counters: counters });

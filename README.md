@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Simple basic React counter App website (Shopping cart prototype)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Can be accessed here https://mekdie.github.io/react-counterApp
 
 ## Available Scripts
 

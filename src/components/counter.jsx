@@ -31,7 +31,6 @@ class Counter extends Component {
   // };
 
   render() {
-    console.log("props", this.props);
     return (
       <>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>

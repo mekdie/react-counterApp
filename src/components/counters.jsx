@@ -26,11 +26,13 @@ class Counters extends Component {
   };
 
   handleIncrement = (counter) => {
-    const counters = [...this.state.counters]; //cloning array, counters = counters array in state
-    const index = counters.indexOf(counter);
-    counters[index] = { ...counter };
-    counters[index].value++;
-    this.setState({ counters });
+    const x = [...this.state.counters]; //cloning array, counters = counters array in state
+    const index = x.indexOf(counter);
+    console.log(x);
+    // x[index] = { ...counter };
+
+    x[index].value++;
+    this.setState({ counters: x });
   };
   //RULE OF THUMB
   // the component that owns a piece of the state, should be the one modifying it
